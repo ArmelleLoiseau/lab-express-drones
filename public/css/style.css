@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-container {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: white;  
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-container a {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform:uppercase;
+  padding: 20px;
+}
+
+
+.home-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  background-image: url("./../images/drone.jpeg");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+.titles {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.drone-container {
+  height: 100vh;
+  padding: 100px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+}
+
+
+.onedrone-card {
+  max-width: 300px;
+  max-height: 150px;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links a {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+form label, input, button {
+  width: 40vw;
+  text-align: center;
+}
+
+form button {
+  cursor: pointer;
+}

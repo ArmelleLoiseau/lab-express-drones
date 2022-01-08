@@ -8,16 +8,19 @@ const drones = [
     name: "Very expensive toy",
     propellers: 3,
     maxSpeed: 12,
+    picture: `<i class="fa-solid fa-plane"></i>`,
   },
   {
     name: "For rich kids",
     propellers: 4,
     maxSpeed: 15,
+    picture: `<i class="fa-solid fa-money-bill-1-wave"></i>`,
   },
   {
     name: "Takes nice videos",
     propellers: 5,
     maxSpeed: 18,
+    picture: `<i class="fa-solid fa-video"></i>`,
   },
 ];
 

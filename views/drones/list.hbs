@@ -1,9 +1,16 @@
-<h2>Available drones</h2>
+<h2 class="titles">Available drones</h2>
 
-{{#each drones}}
-    <p>Drone name: {{this.name}}</p>
-    <p>Number of propellers: {{this.propellers}}</p>
-    <p>Max speed: {{this.maxSpeed}}</p>
-    <a href="/drones/{{this._id}}/edit">Edit info</a>
-    <a href="/drones/{{this._id}}/delete">Delete drone</a>
-{{/each}}
+<div class="drone-container">
+    {{#each drones}}
+        <div class="onedrone-card">
+            <div class="done-logo">{{{this.picture}}}</div>
+            <p>Drone name: {{this.name}}</p>
+            <p>Number of propellers: {{this.propellers}}</p>
+            <p>Max speed: {{this.maxSpeed}}</p>
+            <div class="links">
+                <a href="/drones/{{this._id}}/edit">Edit info <i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="/drones/{{this._id}}/delete">Delete drone<i class="fa-solid fa-trash-can"></i></a>
+            </div>
+        </div>
+    {{/each}}
+</div>
